@@ -1,10 +1,17 @@
 import React from 'react';
 import './sidebar.css';
-import logo from '../../assets/icons/logo-spotify.png';
+import logo from '../../assets/icons/logo-artist.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faSearch, faGlobe, faBook, faPlus, faCookie } from '@fortawesome/free-solid-svg-icons';
 
-const Sidebar = () => {
+const Sidebar = ({ inputRef }) => {
+
+    const handleFocus = () => {
+        if (inputRef && inputRef.current) {
+            inputRef.current.focus();
+        }
+    };
+
     return (
         <div className="sidebar">
             <nav className="sidebar__navigation">
@@ -16,15 +23,17 @@ const Sidebar = () => {
                 <ul>
                     <li>
                         <a href="">
-                            <span><FontAwesomeIcon icon={faHome} size='lg' /></span>
+                            <span className='home-button'><FontAwesomeIcon icon={faHome} size='lg' /></span>
                             <span>Início</span>
                         </a>
                     </li>
                     <li>
-                        <a href="">
-                            <span><FontAwesomeIcon icon={faSearch} size='lg' /></span>
-                            <span>Buscar</span>
-                        </a>
+                        <button onClick={handleFocus}>
+                            <a href='#'>
+                                <span className='search-button'><FontAwesomeIcon icon={faSearch} size='lg' /></span>
+                                <span>Buscar</span>
+                            </a>
+                        </button>
                     </li>
                 </ul>
             </nav>

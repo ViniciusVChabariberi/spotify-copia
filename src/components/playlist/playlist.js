@@ -15,11 +15,13 @@ import Playlist12 from '../../assets/playlist/12.jpeg';
 import Playlist13 from '../../assets/playlist/13.jpeg';
 import Playlist14 from '../../assets/playlist/14.jpeg';
 import Playlist15 from '../../assets/playlist/15.jpeg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlay } from '@fortawesome/free-solid-svg-icons';
 
 const Playlist = ({ artists }) => {
     return (
         <div className="main-container">
-            <div className="playlist-container">
+            <div className={`playlist-container expanded-${Math.ceil(artists.length / 5)}`}>
                 {artists.length === 0 ? (
                     <div id="result-playlists">
                         <div className="playlist">
@@ -159,13 +161,19 @@ const Playlist = ({ artists }) => {
                                 <div key={artist.id} className="artist-card">
                                     <div className="card-img">
                                         <img src={artist.urlImg} className="artist-img" alt={artist.name} />
-                                        <div className="play">
-                                            <span className="fa fa-solid fa-play"></span>
-                                        </div>
+                                        <a target="_blank" rel="noopener noreferrer" href={artist.url}>
+                                            <div className="play">
+                                                <span>
+                                                    <FontAwesomeIcon icon={faPlay} size='lg' />
+                                                </span>
+                                            </div>
+                                        </a>
                                     </div>
                                     <div className="card-text">
                                         <span className="artist-name">{artist.name}</span>
-                                        <span className="artist-categorie">Artista</span>
+                                        <span className="artist-categorie">
+                                            Artista - {artist.genre}
+                                        </span>
                                     </div>
                                 </div>
                             ))}

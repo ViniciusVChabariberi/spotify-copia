@@ -5,7 +5,7 @@
     padding: 16px;
     margin: 15px;
     border-radius: 8px;
-    background-color: #121212;
+    background-color: #C68FFD;
     padding: 14px;
     max-width: 78.5vw;
     margin-left: 330px;
@@ -29,8 +29,8 @@
     justify-content: center;
     width: 32px;
     height: 32px;
-    background: #131313;
-    background-color: rgba(0,0,07);
+    background-color: #fff;
+    color: #000073;
     border-radius: 50%;
     border: none;
     cursor: pointer;
@@ -47,22 +47,23 @@
     width: 364px;
     height: 48px;
     margin-left: 8px;
-    background-color: #242424;
+    background-color: #edebeb;
     border-radius: 500px;
     border: 1px solid transparent;
   }
   
-  .header__search img {
+  .header__search .search {
     width: 16px;
     height: 16px;
     margin-left: 10px;
+    color: #000073;
   }
   
   .header__search input {
     background: transparent;
     border: none;
     padding: 0px 100px 0 12px;
-    color: #fff;
+    color: #000073;
     text-overflow: ellipsis;
     overflow:hidden;
     white-space: nowrap;
@@ -70,7 +71,7 @@
   }
   
   .header__login .subscribe {
-    color: #a7a7a7;
+    color: #242424;
     font-size: 16px;
     font-weight: 700;
     background-color: transparent;

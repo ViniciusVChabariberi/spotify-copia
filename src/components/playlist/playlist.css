@@ -3,12 +3,25 @@
     padding-top: 16px;
     margin: 10px;
     border-radius: 10px;
-    background-color: #121212;
+    background-color: #C68FFD;
     max-width: 80vw;
     margin-left: 330px;
     margin-right: 15px;
+    transition: height 0.3s ease-in-out;
   }
   
+  .playlist-container.expanded-2 {
+    height: 110vh;
+  }
+
+  .playlist-container.expanded-3 {
+    height: 152vh;
+  }
+
+  .playlist-container.expanded-4 {
+    height: 194vh;
+  }
+
   .playlist {
     margin: 24px;
   }
@@ -60,6 +73,7 @@
     height: 200px;
     overflow: hidden;
     border-radius: 8px;
+    color: #000073;
   }
   
   .cards span {
@@ -146,7 +160,7 @@
   }
   
   .artist-card {
-    background: #181818;
+    background: #C68FFD;
     border-radius: 8px;
     -ms-flex: 1;
     flex: 1;
@@ -158,7 +172,7 @@
   }
   
   .artist-card:hover {
-    background-color: #252525;
+    background-color: #7c06f1;
   }
   
   .card-img {
@@ -202,7 +216,7 @@
   }
   
   .artist-categorie {
-    color: #6a6a6a;
+    color: #dddbdb;
     font-weight: 400;
     font-size: 0.875rem;
   }
@@ -214,9 +228,10 @@
   .play .fa-play {
     position: absolute;
     right: 10px;
-    top: 120px;
+    top: 230px;
     padding: 18px;
-    background-color: #1db954;
+    background-color: #C68FFD;
+    color: #000073;
     border-radius: 100%;
     font-size: 14px;
     opacity: 0;
