@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# Projeto de Portfólio - Inspirado no Spotify
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é um projeto desenvolvido para o meu portfólio, com o objetivo de praticar o uso de linguagens de programação como HTML, CSS e JavaScript e sua integração dentro da biblioteca React.
 
-## Available Scripts
+## 🚀 Objetivo
 
-In the project directory, you can run:
+O projeto tem como objetivo:
 
-### `npm start`
+- Criar uma aplicação visualmente similar ao site do Spotify.
+- Exibir o nome e a imagem de artistas populares.
+- Redirecionar o usuário para a página do artista no Spotify.
+- Utilizar a API do Spotify para buscar os dados dos artistas (nome, imagem, link).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ Tecnologias Usadas
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **[React](https://react.dev/)** - Biblioteca JavaScript para a criação de interfaces de usuário.
+- **[Spotify for Developers](https://developer.spotify.com/)** - API oficial do Spotify, utilizada para obter informações sobre os artistas.
+- **[CSS](https://www.w3schools.com/css/css_intro.asp)** - Para estilização da aplicação.
 
-### `npm test`
+## 📦 Instalação
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+1. Instale o [Node.js](https://nodejs.org/pt) em sua máquina.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Clone este repositório para os seus arquivos por meio de um terminal (preferentemente pelo vscode ou cmd):
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+git clone https://github.com/ViniciusVChabariberi/spotify-copia/.git
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Ative o servidor JSON localmente em seu terminal:
 
-### `npm run eject`
+```bash
+json-server --watch src/api/artists.json --port 3000
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. Inicie a aplicação pelo node:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+5. Está pronta para ser utilizada!
