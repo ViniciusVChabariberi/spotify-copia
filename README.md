@@ -2,6 +2,8 @@
 
 Este é um projeto desenvolvido para o meu portfólio, com o objetivo de praticar o uso de linguagens de programação como HTML, CSS e JavaScript e sua integração dentro da biblioteca React.
 
+<img src="public/imagem1.png">
+
 ## 🚀 Objetivo
 
 O projeto tem como objetivo:
@@ -11,6 +13,8 @@ O projeto tem como objetivo:
 - Redirecionar o usuário para a página do artista no Spotify.
 - Utilizar a API do Spotify para buscar os dados dos artistas (nome, imagem, link).
 
+<img src="public/imagem2.png">
+
 ## 🛠️ Tecnologias Usadas
 
 - **[React](https://react.dev/)** - Biblioteca JavaScript para a criação de interfaces de usuário.
@@ -19,25 +23,28 @@ O projeto tem como objetivo:
 
 ## 📦 Instalação
 
-
 1. Instale o [Node.js](https://nodejs.org/pt) em sua máquina.
-
+---
 2. Clone este repositório para os seus arquivos por meio de um terminal (preferentemente pelo vscode ou cmd):
-
 ```bash
 git clone https://github.com/ViniciusVChabariberi/spotify-copia/.git
 ```
-
+---
 3. Ative o servidor JSON localmente em seu terminal:
-
 ```bash
 json-server --watch src/api/artists.json --port 3000
 ```
-
+---
 4. Inicie a aplicação pelo node:
-
 ```bash
 npm start
 ```
-
+---
 5. Está pronta para ser utilizada!
+<br>
+
+## 🥳 Créditos
+
+Gostaria de dedicar a criação deste repositório para a [Alura](https://www.alura.com.br/) em sua imersão Front-end 2025. Durante as aulas, pude absorver uma grande quantidade de conhecimentos e acompanhar perfeitamente os estudos pela boa didática dos instrutores.
+
+<img src="certificado/image.png">
